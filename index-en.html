@@ -31,23 +31,23 @@
     <p>my artwork</p>
     
     <!-- start viewer, change src and ios-src -->
-    <div align="center">
+      <div align="center">
       <model-viewer
-        src="/assets/pies2.glb"
+        src="./assets/pies2.glb"
+        ios-src="./assets/pies2.usdz"
         ar
-        ar-scale="fixed"
+        ar-modes="webxr scene-viewer quick-look"
+        ar-placement="floor"
+        ar-scale="auto"
         camera-controls
-        alt="A 3D cube"
-        skybox-image=""
+        alt="A 3D sculpture of robotic canine companions"
         exposure="0.5"
-        ios-src="/assets/pies2.usdz"
-        xr-environment
       >
         <button class="arbutton" slot="ar-button">
           Mixed Reality
         </button>
         <button class="a-frame-button">
-          <a href="ar.html">Augmented Reality</a>
+          <a href="ar.html" style="color: inherit; text-decoration: none;">Augmented Reality</a>
         </button>
      </model-viewer>
     </div>
